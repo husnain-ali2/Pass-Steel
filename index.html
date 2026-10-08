@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pass Steel | Premium Plastic Furniture</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="description" content="Pass Steel - Premium plastic furniture and chairs built on steel-reinforced frames." />
+
+  <!-- ===================================================
+       BOOTSTRAP 5 (loaded from CDN - internet required)
+       If you want it to work fully offline, download Bootstrap
+       and put it in a "vendor/bootstrap" folder, then change
+       the links below to point there instead.
+  ==================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Our own custom CSS (colors, 3D effects, spacing) -->
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+       - Change "PASS STEEL" text below to your own brand name
+       - Menu links point to section IDs further down this page
+  ========================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#top">PASS <span>STEEL</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-gold ms-lg-3 mt-3 mt-lg-0">Request a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================
+       HERO SECTION
+       - To change the big photo: replace images/hero-chair.jpg
+         with your own photo (same file name, roughly 1600x1000px)
+       - Change the headline text and short paragraph as needed
+  ========================================================= -->
+  <header id="top" class="hero d-flex align-items-center">
+    <img src="images/hero-chair.jpg" alt="Pass Steel chair" class="hero-bg">
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative text-white">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="eyebrow">Premium Plastic Furniture</p>
+          <h1 class="hero-title">Crafted for Comfort.<br>Designed to Last.</h1>
+          <p class="hero-text">We design and manufacture premium plastic chairs
+            built on steel-reinforced frames — for homes, offices and outdoor
+            spaces that need furniture built to last.</p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#products" class="btn btn-gold btn-lg">Explore Collection</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       IMAGE ROW (auto-sliding strip)
+       - Images chalti rehti hain ek row mein. Mouse upar lein to ruk jati hain.
+       - Images images/chair-1.jpg ... chair-8.jpg se aati hain.
+       - Neeche wali list 2 dafa likhi hai taake loop smooth rahe.
+  ========================================================= -->
+  <section class="image-row-section">
+    <div class="image-row">
+      <div class="image-track">
+        <img src="images/chair-1.jpg" alt="Pass Steel chair 1" loading="lazy"><img src="images/chair-2.jpg" alt="Pass Steel chair 2" loading="lazy"><img src="images/chair-3.jpg" alt="Pass Steel chair 3" loading="lazy"><img src="images/chair-4.jpg" alt="Pass Steel chair 4" loading="lazy"><img src="images/chair-5.jpg" alt="Pass Steel chair 5" loading="lazy"><img src="images/chair-6.jpg" alt="Pass Steel chair 6" loading="lazy"><img src="images/chair-7.jpg" alt="Pass Steel chair 7" loading="lazy"><img src="images/chair-8.jpg" alt="Pass Steel chair 8" loading="lazy">
+        <img src="images/chair-1.jpg" alt="Pass Steel chair 1" loading="lazy"><img src="images/chair-2.jpg" alt="Pass Steel chair 2" loading="lazy"><img src="images/chair-3.jpg" alt="Pass Steel chair 3" loading="lazy"><img src="images/chair-4.jpg" alt="Pass Steel chair 4" loading="lazy"><img src="images/chair-5.jpg" alt="Pass Steel chair 5" loading="lazy"><img src="images/chair-6.jpg" alt="Pass Steel chair 6" loading="lazy"><img src="images/chair-7.jpg" alt="Pass Steel chair 7" loading="lazy"><img src="images/chair-8.jpg" alt="Pass Steel chair 8" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PRODUCTS SECTION
+       - Each card below is one chair product.
+       - To add YOUR chair photos: replace images/chair-1.jpg,
+         chair-2.jpg, chair-3.jpg, chair-4.jpg with your own photos
+         (keep the same file names, or update the src="" path).
+       - To add MORE products: copy one whole "col-md-6 col-lg-3"
+         block and paste it again, then edit the text/image.
+       - The ".tilt-card" class gives the 3D tilt hover effect
+         (handled in js/script.js).
+  ========================================================= -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-head text-center mx-auto reveal">
+        <p class="eyebrow">Our Collection</p>
+        <h2>Featured Chairs</h2>
+        <p class="text-muted">Strong steel frames, comfortable seats and finishes that last. Tap View Details to ask about any chair.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- PRODUCT 1 -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-1.jpg" alt="Pass Steel chair 1" loading="lazy">
+              <span class="product-tag">PS-01</span>
+            </div>
+            <div class="product-body">
+              <h3>P-86 Multi-Purpose Ergonomic Chair</h3>
+              <p>Heavy-Duty Visitor Chair combines an ergonomic, textured molded plastic shell with a heavy-duty twisted iron frame for maximum strength and comfort..</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-2.jpg" alt="Pass Steel chair 2" loading="lazy">
+              <span class="product-tag">PS-02</span>
+            </div>
+            <div class="product-body">
+              <h3>Studio Office Chair</h3>
+      
+              <p>The Studio Office Chair combines a breathable mesh backrest with ergonomic lumbar support to maintain perfect posture during long work hours .Equipped with adjustable.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-3.jpg" alt="Pass Steel chair 3" loading="lazy">
+              <span class="product-tag">PS-03</span>
+            </div>
+            <div class="product-body">
+              <h3>Terrace Lounge Chair</h3>
+              <p>The Terrace Lounge Chair features an ergonomic, weather-resistant design engineered for ultimate outdoor comfort and relaxation.Built with high-durability</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-4.jpg" alt="Pass Steel chair 4" loading="lazy">
+              <span class="product-tag">PS-04</span>
+            </div>
+            <div class="product-body">
+              <h3>Class Room Chair</h3>
+              <p>The Class Room Chair features an ergonomic, impact-resistant plastic shell designed to support healthy posture during long hours of learning. Built with a heavy-duty steel frame and a stackable layout.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT 5-->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-5.jpg" alt="Pass Steel chair 5" loading="lazy">
+              <span class="product-tag">PS-05</span>
+            </div>
+            <div class="product-body">
+              <h3>P-86-AC Modern Armchair</h3>
+              <p>The Modern Armchair features an ergonomic, impact-resistant design engineered for ultimate indoor comfort and relaxation. Built with high-durability materials and a sleek aesthetic.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT 6-->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-6.jpg" alt="Pass Steel chair 6" loading="lazy">
+              <span class="product-tag">PS-06</span>
+            </div>
+            <div class="product-body">
+              <h3>P-99 Class Room Chair</h3>
+              <p>It features a classic one-piece molded plastic shell in bright lime green, designed specifically for durability, stackability, and ergonomic support in educational .</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT 7-->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-7.jpg" alt="Pass Steel chair 7" loading="lazy">
+              <span class="product-tag">PS-07</span>
+            </div>
+            <div class="product-body">
+              <h3>P-200 Holo Study Big Shell Chair</h3>
+              <p>This institutional-grade chair features a contoured, heavy-duty molded polypropylene shell seat with a distinctive rectangular handle cutout in the lower backrest for ventilation and easy lifting.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT 8-->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-8.jpg" alt="Pass Steel chair 8" loading="lazy">
+              <span class="product-tag">PS-08</span>
+            </div>
+            <div class="product-body">
+              <h3>P-363 Sofa Chair</h3>
+              <p>The Sofa Chair features an ergonomic, impact-resistant design engineered for ultimate indoor comfort and relaxation. Built with high-durability materials and a sleek aesthetic.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!--PRODUCT 9-->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="product-card tilt-card">
+            <div class="product-img">
+              <img src="images/chair-9.jpg" alt="Pass Steel chair 9" loading="lazy">
+              <span class="product-tag">PS-09</span>
+            </div>
+            <div class="product-body">
+              <h3>P-586-A Office Chair</h3>
+              <p>This ergonomic revolving chair features a vibrant blue molded plastic shell equipped with a built-in horizontal ventilation handle and fixed black armrests.</p>
+              <a href="#contact" class="btn btn-sm btn-outline-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div><!-- /row -->
+      
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       SIGNATURE CHAIR SECTION
+       - EDIT: image, name, description and feature list below.
+       - Image: images/chair-1.jpg (replace the file or change the file name here)
+  ========================================================= -->
+  <section id="signature" class="section signature-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="signature-img-wrap reveal reveal-left">
+            <span class="signature-badge">Signature Chair</span>
+            <img src="images/chair-1.jpg" alt="Pass Steel Signature Chair" loading="lazy" class="img-fluid tilt-card">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal reveal-right">
+          <p class="eyebrow text-gold">Our Best Seller</p>
+          <h2 class="mb-3">The Pass Steel Signature Chair</h2>
+          <!-- EDIT: description -->
+          <p class="text-muted">Our most loved design. Built on a strong steel-reinforced frame with a smooth, comfortable seat that stays beautiful for years.</p>
+          <!-- EDIT: feature list -->
+          <ul class="signature-list list-unstyled mb-4">
+            <li><i class="fa-solid fa-check"></i> Steel-reinforced frame for extra strength</li>
+            <li><i class="fa-solid fa-check"></i> Comfortable, curved seat and back</li>
+            <li><i class="fa-solid fa-check"></i> Easy to clean, long-lasting finish</li>
+            <li><i class="fa-solid fa-check"></i> Ideal for home, office and events</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold btn-lg">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT / OWNER SECTION
+       - To add OWNER photo: replace images/owner.jpg with the
+         owner's real photo (keep same file name, ~800x1000px)
+       - Edit the owner name, title and bio text below
+  ========================================================= -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <!-- OWNER PHOTO -->
+          <div class="owner-photo tilt-card">
+            <img src="images/owner.jpg" alt="Owner of Pass Steel" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="eyebrow">About Us</p>
+          <h2>Meet the Founder</h2>
+
+          <!-- EDIT: owner name and title -->
+          <h4 class="owner-name">Mr.Tanveer Qayyam</h4>
+          <p class="owner-title">Founder &amp; CEO, Pass Steel</p>
+
+          <!-- EDIT: owner bio / company story paragraph -->
+          <p class="text-muted">Founded in 2014, Pass Steel was built on a foundation of uncompromising quality and exceptional craftsmanship. Over the last 12+ years, we have earned the trust of 96% of our clients by delivering durable, precision-engineered products and backing them with an industry-leading 7-year warranty. With more than 40,000 chairs sold, choosing Pass Steel means partnering with a proven leader dedicated to long-lasting reliability and comfort.</p>
+
+          <div class="row mt-4 g-3">
+            <!-- EDIT: these numbers / stats as needed -->
+            <div class="col-6 col-md-3">
+              <div class="mini-stat"><b>12+</b><span>Years</span></div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="mini-stat"><b>40k+</b><span>Chairs Sold</span></div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="mini-stat"><b>7-yr</b><span>Warranty</span></div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="mini-stat"><b>96%</b><span>Happy Clients</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WHY CHOOSE US SECTION
+       - Simple icon + text blocks using Font Awesome icons.
+       - To change an icon, replace the class on the <i> tag -
+         browse icons at https://fontawesome.com/icons
+  ========================================================= -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="section-head text-center mx-auto reveal">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Built Different, Built to Last</h2>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="why-card">
+            <i class="fa-solid fa-gem"></i>
+            <h3>Quality</h3>
+            <p>Every frame is tested before it leaves our workshop.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="why-card">
+            <i class="fa-solid fa-couch"></i>
+            <h3>Comfort</h3>
+            <p>Seats shaped around real posture and daily use.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="why-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Durability</h3>
+            <p>Steel-reinforced joints backed by a 7-year warranty.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="why-card">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>Modern Design</h3>
+            <p>Designed in-house for spaces people actually live in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+       - Edit the phone / email / address text below.
+       - This form does NOT send real emails yet. To make it work,
+         connect it to a service like Formspree, EmailJS, or your
+         own backend/PHP script, and set the form's "action" link.
+  ========================================================= -->
+  <section id="contact" class="section bg-dark text-white">
+    <div class="container">
+      <div class="section-head text-center mx-auto reveal">
+        <p class="eyebrow text-gold">Contact</p>
+        <h2 class="text-white">Let's Work Together</h2>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <ul class="contact-list list-unstyled">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+923216471400">+92 3216471400</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/923006465854" target="_blank" rel="noopener">+92 300 6465854</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@passsteel.com">hello@passsteel.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Shalimar Town Main GT Road Pindi Bypass Gujranwala</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Sat, 9:00am - 7:00pm</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- EDIT the "action" attribute below once you connect a real form service -->
+          <form class="contact-form row g-3" id="contactForm">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="col-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject">
+            </div>
+            <div class="col-12">
+              <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-gold btn-lg">Send Message</button>
+            </div>
+            <div class="col-12"><p id="formStatus" class="mb-0" role="status" aria-live="polite"></p></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+     
+    <div class="container text-center">
+      <a href="#top" class="navbar-brand">PASS <span>STEEL</span></a>
+      <p class="mb-0 mt-2">&copy; 2026 Pass Steel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- floating WhatsApp button (EDIT the number in the link if needed) -->
+  <a href="https://wa.me/923006465854?text=Hello%20Pass%20Steel%2C%20I%20want%20to%20ask%20about%20your%20chairs." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+
+  <!-- back-to-top button -->
+  <a href="#top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Bootstrap JS (needed for navbar toggle on mobile) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Our own custom JS (3D tilt effect, navbar shadow, back-to-top) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

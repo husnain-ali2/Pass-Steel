@@ -1,0 +1,433 @@
+/* ======================================================
+   PASS STEEL - CUSTOM STYLES
+   This file sits ON TOP of Bootstrap. Bootstrap handles the
+   grid/layout, this file handles colors, fonts and the 3D
+   hover effects. Edit the variables below to re-theme the
+   whole site in one place.
+====================================================== */
+
+:root{
+  --gold: #a9823f;        /* main accent color - buttons, highlights */
+  --gold-dark: #8a6a31;    /* darker gold for hover states */
+  --charcoal: #1b1915;     /* dark background / text color */
+  --ivory: #f6f1e7;        /* light background color */
+  --muted: #6e675a;        /* muted grey-brown text */
+}
+
+/* -------- base page styles -------- */
+body{
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--charcoal);
+  background: #fff;
+}
+h1,h2,h3,h4{ font-weight: 700; }
+.text-muted{ color: var(--muted) !important; }
+.text-gold{ color: var(--gold) !important; }
+a{ text-decoration: none; }
+
+/* -------- reusable "gold" button (matches brand color) -------- */
+.btn-gold{
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 4px;
+  transition: all .25s ease;
+}
+.btn-gold:hover{
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+  color: #fff;
+  transform: translateY(-2px); /* small lift on hover */
+}
+
+/* -------- NAVBAR -------- */
+#mainNav{
+  background: rgba(246,241,231,.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+  padding: 14px 0;
+  transition: padding .25s ease;
+}
+#mainNav.scrolled{ padding: 6px 0; } /* toggled by script.js on scroll */
+.navbar-brand{
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: .03em;
+  color: var(--charcoal) !important;
+}
+.navbar-brand span{ color: var(--gold); }
+.nav-link{
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--charcoal) !important;
+  margin: 0 10px;
+}
+.nav-link:hover{ color: var(--gold) !important; }
+
+/* -------- HERO SECTION -------- */
+.hero{
+  position: relative;
+  min-height: 92vh;
+  overflow: hidden;
+}
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the space without distorting the photo */
+}
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  /* dark gradient so white text stays readable over any photo */
+  background: linear-gradient(180deg, rgba(15,13,10,.35) 0%, rgba(15,13,10,.82) 100%);
+}
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.hero-title{
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+.hero-text{
+  max-width: 560px;
+  font-size: 16px;
+  color: #e7e2d6;
+}
+
+/* -------- SECTION SPACING -------- */
+.section{ padding: 100px 0; }
+.section-head{ max-width: 620px; margin-bottom: 50px; }
+.section-head h2{ font-size: clamp(28px, 3.4vw, 40px); }
+
+/* -------- PRODUCT CARDS -------- */
+.product-card{
+  background: #fff;
+  border: 1px solid #eee2cd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+.product-img{
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: var(--ivory);
+}
+.product-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+.product-tag{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(27,25,21,.85);
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+.product-body{ padding: 20px; }
+.product-body h3{ font-size: 18px; margin-bottom: 8px; }
+.product-body p{ color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+
+/* -------- OWNER PHOTO -------- */
+.owner-photo{
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+.owner-photo img{ width: 100%; height: 100%; object-fit: cover; }
+.owner-name{ margin-top: 4px; margin-bottom: 2px; }
+.owner-title{ color: var(--gold); font-weight: 600; font-size: 14px; margin-bottom: 16px; }
+.mini-stat{
+  background: #fff;
+  border: 1px solid #eee2cd;
+  border-radius: 6px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.mini-stat b{ display: block; font-size: 22px; color: var(--charcoal); }
+.mini-stat span{ font-size: 12px; color: var(--muted); }
+
+/* -------- WHY CHOOSE US CARDS -------- */
+.why-card{
+  background: var(--ivory);
+  border-radius: 8px;
+  padding: 34px 20px;
+  height: 100%;
+}
+.why-card i{ font-size: 30px; color: var(--gold); margin-bottom: 16px; }
+.why-card h3{ font-size: 18px; margin-bottom: 8px; }
+.why-card p{ color: var(--muted); font-size: 14px; margin-bottom: 0; }
+
+/* -------- CONTACT SECTION -------- */
+.contact-list li{
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  font-size: 15px;
+}
+.contact-list i{ color: var(--gold); width: 22px; }
+.contact-form .form-control{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff;
+  padding: 12px 14px;
+}
+.contact-form .form-control::placeholder{ color: #bdb6a7; }
+.contact-form .form-control:focus{
+  background: rgba(255,255,255,.1);
+  border-color: var(--gold);
+  box-shadow: none;
+  color: #fff;
+}
+
+/* -------- FOOTER -------- */
+.footer{
+  background: #121008;
+  color: #a9a296;
+  padding: 36px 0;
+}
+.footer .navbar-brand{ color: #fff !important; }
+
+/* -------- BACK TO TOP BUTTON -------- */
+.back-to-top{
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  color: #fff;
+  display: none; /* shown by script.js after scrolling down */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: background .2s ease;
+}
+.back-to-top:hover{ background: var(--gold); color: #fff; }
+
+/* ======================================================
+   3D TILT HOVER EFFECT
+   Applied to any element with class "tilt-card".
+   The actual tilt angle is calculated in js/script.js on
+   mouse move; this part just makes the transform smooth
+   and adds a lift + shadow so it feels "3D".
+====================================================== */
+.tilt-card{
+  transition: transform .15s ease, box-shadow .3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt-card:hover{
+  box-shadow: 0 22px 40px rgba(27,25,21,.18);
+}
+
+/* -------- small screens: simplify spacing -------- */
+@media (max-width: 991px){
+  .section{ padding: 70px 0; }
+  .navbar-collapse{
+    background: var(--ivory);
+    margin-top: 12px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+}
+
+
+/* -------- sliding image row -------- */
+.image-row-section{ background: var(--charcoal); padding: 24px 0; }
+.image-row{ overflow: hidden; width: 100%; }
+.image-track{
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: slideRow 40s linear infinite;
+}
+.image-row:hover .image-track{ animation-play-state: paused; }
+.image-track img{
+  height: 220px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+@keyframes slideRow{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(calc(-50% - 8px)); }
+}
+@media (max-width: 576px){ .image-track img{ height: 150px; } }
+@media (prefers-reduced-motion: reduce){ .image-track{ animation: none; } }
+
+
+/* -------- signature chair section -------- */
+.signature-section{ background: var(--ivory); }
+.signature-img-wrap{ position: relative; }
+.signature-img-wrap img{ width: 100%; border-radius: 14px; box-shadow: 0 20px 45px rgba(27,25,21,.22); }
+.signature-badge{
+  position: absolute; top: 16px; left: 16px; z-index: 2;
+  background: var(--gold); color: #fff;
+  padding: 6px 16px; border-radius: 999px;
+  font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+}
+.signature-list li{ padding: 6px 0; }
+.signature-list i{ color: var(--gold); margin-right: 10px; }
+
+
+/* ======================================================
+   UI / UX IMPROVEMENTS
+====================================================== */
+html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
+body{ line-height: 1.7; -webkit-font-smoothing: antialiased; }
+p{ max-width: 68ch; }
+.section-head p, .text-center p{ margin-left: auto; margin-right: auto; }
+
+/* keyboard focus is always visible */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* active menu link (set by script.js) */
+.nav-link.active{ color: var(--gold) !important; box-shadow: inset 0 -2px 0 var(--gold); }
+
+/* bigger tap targets on buttons */
+.btn{ min-height: 46px; display: inline-flex; align-items: center; justify-content: center; }
+
+/* product cards: clearer hover */
+.product-card{ transition: box-shadow .25s ease, transform .25s ease; }
+.product-card:hover{ box-shadow: 0 14px 34px rgba(27,25,21,.14); }
+
+/* contact links */
+.contact-list a{ color: inherit; border-bottom: 1px dashed rgba(255,255,255,.35); }
+.contact-list a:hover{ color: var(--gold); border-bottom-color: var(--gold); }
+
+/* contact form */
+.contact-form .form-control{ min-height: 50px; border-radius: 6px; }
+.contact-form textarea.form-control{ min-height: 140px; }
+.contact-form .form-control:focus{ border-color: var(--gold); box-shadow: 0 0 0 .2rem rgba(169,130,63,.3); }
+#formStatus{ font-weight: 500; color: #e9d7aa; }
+
+/* image row: soft fade on both edges */
+.image-row{
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* floating WhatsApp button */
+.whatsapp-float{
+  position: fixed; left: 20px; bottom: 20px; z-index: 1000;
+  display: flex; align-items: center; gap: 10px;
+  background: #1fa855; color: #fff; font-weight: 600; font-size: 14px;
+  padding: 12px 18px; border-radius: 999px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.25);
+  transition: background .2s ease, transform .2s ease;
+}
+.whatsapp-float i{ font-size: 22px; }
+.whatsapp-float:hover{ background: #178a46; color: #fff; transform: translateY(-2px); }
+
+/* phones */
+@media (max-width: 991px){
+  .section{ padding: 70px 0; }
+  #mainNav .navbar-collapse{ background: var(--ivory); padding: 12px 0 18px; }
+  .nav-link{ padding: 12px 4px; margin: 0; }
+}
+@media (max-width: 576px){
+  .section{ padding: 56px 0; }
+  .hero{ min-height: 80vh; }
+  .hero .btn{ width: 100%; }
+  .whatsapp-float span{ display: none; }      /* icon only on small screens */
+  .whatsapp-float{ padding: 14px; left: 16px; bottom: 16px; }
+  .back-to-top{ right: 16px; bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *{ transition: none !important; }
+}
+
+
+/* ======================================================
+   ANIMATIONS
+   (all switched off automatically for people who prefer
+    reduced motion)
+====================================================== */
+
+/* 1. Hero: text slides in one line after another on page load */
+@keyframes riseIn{ from{ opacity: 0; transform: translateY(26px); } to{ opacity: 1; transform: none; } }
+@keyframes slowZoom{ from{ transform: scale(1.08); } to{ transform: scale(1); } }
+.hero-bg{ animation: slowZoom 8s ease-out both; }
+.hero .eyebrow, .hero .hero-title, .hero .hero-text, .hero .d-flex{ animation: riseIn .8s ease-out both; }
+.hero .eyebrow{ animation-delay: .1s; }
+.hero .hero-title{ animation-delay: .25s; }
+.hero .hero-text{ animation-delay: .45s; }
+.hero .d-flex{ animation-delay: .65s; }
+
+/* 2. Scroll reveal: items appear as you scroll down to them */
+.js .reveal{ opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal-left{ transform: translateX(-40px); }
+.js .reveal-right{ transform: translateX(40px); }
+.js .reveal.in-view{ opacity: 1; transform: none; }
+
+/* 3. Signature badge: gentle shine */
+.signature-badge{ overflow: hidden; }
+.signature-badge::after{
+  content: ""; position: absolute; top: 0; left: -80%; width: 50%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent);
+  animation: shine 3.5s ease-in-out infinite;
+}
+@keyframes shine{ 0%, 60%{ left: -80%; } 100%{ left: 140%; } }
+
+/* 4. WhatsApp button: soft pulse ring to draw attention */
+.whatsapp-float{ animation: waPulse 2.6s ease-out infinite; }
+@keyframes waPulse{
+  0%{ box-shadow: 0 8px 22px rgba(0,0,0,.25), 0 0 0 0 rgba(31,168,85,.55); }
+  70%{ box-shadow: 0 8px 22px rgba(0,0,0,.25), 0 0 0 16px rgba(31,168,85,0); }
+  100%{ box-shadow: 0 8px 22px rgba(0,0,0,.25), 0 0 0 0 rgba(31,168,85,0); }
+}
+
+/* 5. Product photos: slow zoom on hover */
+.product-img{ overflow: hidden; }
+.product-img img{ transition: transform .6s ease; }
+.product-card:hover .product-img img{ transform: scale(1.06); }
+
+/* 6. Button arrow-free lift + press */
+.btn:active{ transform: translateY(0) scale(.98); }
+
+@media (prefers-reduced-motion: reduce){
+  .hero-bg, .hero .eyebrow, .hero .hero-title, .hero .hero-text, .hero .d-flex,
+  .signature-badge::after, .whatsapp-float{ animation: none !important; }
+  .js .reveal{ opacity: 1; transform: none; transition: none; }
+}
+
+/* ======================================================
+   QA FIXES
+====================================================== */
+/* stop sideways scrolling on phones (Bootstrap g-5 gutters + slide-in animation) */
+html, body{ overflow-x: clip; }
+@media (max-width: 991px){
+  .js .reveal-left, .js .reveal-right{ transform: translateY(32px); }
+}
+
+/* both hero buttons use the same font weight */
+.btn-outline-light, .btn-outline-dark{ font-weight: 600; }
+
+/* product cards: "View Details" always sits at the bottom, cards line up */
+.product-card{ display: flex; flex-direction: column; }
+.product-card .btn{ align-self: flex-start; margin-top: auto; }
+.product-body{ display: flex; flex-direction: column; flex: 1; }
+
+/* easier to tap phone / email links */
+.contact-list a{ display: inline-block; padding: 6px 0; }
